@@ -190,6 +190,8 @@ class ScriptTask(GameUi, GeneralBattle, SwitchSoul, SecretAssets):
             elif not isinstance(jade_num, int):
                 logger.warning(f'OCR failed, try again {jade_num}')
                 return None
+            if jade_num == 121 or jade_num ==221:
+                jade_num = 21
             if jade_num < 7:
                 # 第一个的时候可能是没有检测到
                 gold_number = self.O_SE_GOLD.ocr(self.device.image)
