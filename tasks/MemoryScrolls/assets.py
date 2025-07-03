@@ -48,14 +48,22 @@ class MemoryScrollsAssets:
 	I_MS_ZERO_M = RuleImage(roi_front=(967,312,54,26), roi_back=(967,312,54,26), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_zero_m.png")
 	# 大绘卷不足 
 	I_MS_ZERO_L = RuleImage(roi_front=(968,464,51,27), roi_back=(968,464,51,27), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_zero_l.png")
+	# 绘卷到达95%进度 
+	I_MS_COMPLETE_95 = RuleImage(roi_front=(655,594,4,18), roi_back=(655,594,4,18), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_complete_100.png")
+	# 小碎片 
+	I_MS_FRAGMENT_S = RuleImage(roi_front=(290,677,40,35), roi_back=(290,677,40,35), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_fragment_s.png")
+	# 小碎片满50 
+	I_MS_FRAGMENT_S_50 = RuleImage(roi_front=(473,517,60,25), roi_back=(473,517,60,25), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_fragment_s_50.png")
+	# description 
+	I_MS_FRAGMENT_S_VERIFICATION = RuleImage(roi_front=(522,318,100,100), roi_back=(522,318,100,100), threshold=0.8, method="Template matching", file="./tasks/MemoryScrolls/ms/ms_ms_fragment_s_verification.png")
 
 
 	# Swipe Rule Assets
 	# 小碎片拉满 
-	S_MS_SWIPE_S = RuleSwipe(roi_front=(838,199,37,27), roi_back=(1131,188,66,52), mode="default", name="ms_swipe_s")
+	S_MS_SWIPE_S = RuleSwipe(roi_front=(838,199,37,27), roi_back=(1176,171,80,81), mode="default", name="ms_swipe_s")
 	# 中碎片拉满 
-	S_MS_SWIPE_M = RuleSwipe(roi_front=(838,352,37,23), roi_back=(1133,339,56,53), mode="default", name="ms_swipe_m")
+	S_MS_SWIPE_M = RuleSwipe(roi_front=(838,352,37,23), roi_back=(1176,326,83,84), mode="default", name="ms_swipe_m")
 	# 大碎片拉满 
-	S_MS_SWIPE_L = RuleSwipe(roi_front=(839,503,34,25), roi_back=(1130,492,51,48), mode="default", name="ms_swipe_l")
+	S_MS_SWIPE_L = RuleSwipe(roi_front=(839,503,34,25), roi_back=(1175,473,78,85), mode="default", name="ms_swipe_l")
 
 
