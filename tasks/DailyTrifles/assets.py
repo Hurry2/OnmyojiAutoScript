@@ -1,5 +1,6 @@
 from module.atom.image import RuleImage
 from module.atom.click import RuleClick
+from module.atom.scatter import RuleScatter
 from module.atom.long_click import RuleLongClick
 from module.atom.swipe import RuleSwipe
 from module.atom.ocr import RuleOcr
@@ -159,8 +160,6 @@ class DailyTriflesAssets:
 	I_RECALL_ONE_TICKET = RuleImage(roi_front=(459,604,76,76), roi_back=(459,604,76,76), threshold=0.8, method="Template matching", file="./tasks/DailyTrifles/summonRecall/recall_one_ticket.png")
 	# description 
 	I_RECALL_SM_CONFIRM = RuleImage(roi_front=(424,628,174,61), roi_back=(424,628,174,61), threshold=0.8, method="Template matching", file="./tasks/DailyTrifles/summonRecall/recall_sm_confirm.png")
-	# 抽到的时候出现的 
-	I_SM_CONFIRM_2 = RuleImage(roi_front=(377,630,206,62), roi_back=(377,630,206,62), threshold=0.8, method="Template matching", file="./tasks/DailyTrifles/summonRecall/sm_sm_confirm_2.png")
 
 
 	# Ocr Rule Assets
